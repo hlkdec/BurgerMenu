@@ -1,0 +1,163 @@
+.none{
+  display: none;
+}
+.dropdown-menu {
+}
+.main-item {
+  width: 270px;
+  max-height: 681px;
+  box-shadow: 5px 10px 50px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+.fa{
+  float: right;
+  padding-right: 12px;
+  line-height: 24px;
+}
+.rotate{
+  transform:rotate(0.5turn);
+  padding-left: 12px;
+}
+.item {
+  padding-left: 15px;
+  list-style-type: none;
+  color: #333333;
+  border-bottom: solid 1px  #E5E5E5;
+  cursor: pointer;
+  line-height: 24px;
+  font-weight: 700;
+}
+.item:last-of-type{
+  border-bottom: none;
+}
+.submain {
+  padding: 0;
+  cursor: pointer;
+}
+.subitem {
+  list-style-type: none;
+  color: #E5E5E5;
+  font-size: 14px;
+  padding: 7px 0;
+  font-weight: 400;
+}
+.subitem:hover{
+  color: #333333;
+  cursor: pointer;
+}
+
+.item span {
+  display: inline-block;
+  width: 84%;
+}
+.range_subitem{
+  height: 80px;
+}
+
+
+
+
+
+
+
+
+.middle {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 30px;
+}
+
+.slider {
+  position: relative;
+  z-index: 1;
+  height: 3px;
+  width: 238px;
+}
+.slider > .track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #D5D7E0;
+}
+.slider > .range {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #0A2752;
+}
+.slider > .thumb {
+  position: absolute;
+  z-index: 4;
+  width: 6px;
+  height: 6px;
+  background-color: #0A2752;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(98,0,238,.1);
+  transition: box-shadow .3s ease-in-out;
+}
+.slider > .thumb.left {
+  left: 25%;
+  transform: translate( 0px, -2px)
+}
+.slider > .thumb.right {
+  right: 25%;
+  transform: translate(5px, -18px);
+}
+input[type=range] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 10px;
+  width: 238px;
+  opacity: 0;
+}
+input[type=range]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  -webkit-appearance: none;
+}
+.krug{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 3;
+}
+.krug_left{
+  left: 25%;
+  transform: translate(-5px, -7px);
+}
+.krug_right{
+  right: 25%;
+  transform: translate(232px, -23px);
+}
+
+.price_range{
+  width: 238px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+}
+.min_value, .max_value{
+  display: inline-block;
+} 
